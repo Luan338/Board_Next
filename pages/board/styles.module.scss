@@ -1,0 +1,91 @@
+.contain {
+    margin: 100px auto;
+    max-width: 900px;
+    width: 100%;
+    padding: 2rem;
+    background-color: blueviolet;
+    border-radius: 5px;
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 90%;
+            height: 50px;
+            background-color: rgb(203, 186, 219);
+            outline: none;
+            border: none;
+            border-radius: 5px 0px 0px 5px;
+
+        }
+
+        input::placeholder {
+            color: blueviolet;
+            font-style: italic;
+        }
+
+        button {
+            background-color: rgb(32, 2, 60);
+            color: white;
+            padding: .7rem;
+            width: 10%;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+        }
+    }
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.taskList {
+    padding: .5rem;
+}
+
+.taskList p {
+    margin-bottom: 20px;
+    color: rgb(32, 2, 60);
+    font-weight: bolder;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_edite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+
+    span {
+        color: rgb(237, 187, 3);
+        font-weight: bolder;
+    }
+
+    button {
+        background-color: rgb(32, 2, 60);
+        border: none;
+        padding: .4rem;
+        width: 60px;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+.btn_delete {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid red;
+    padding: .4rem;
+    width: 60px;
+    color: white;
+    border-radius: 5px;
+
+}
