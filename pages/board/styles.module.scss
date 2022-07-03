@@ -22,8 +22,8 @@
         }
 
         input::placeholder {
-            color: blueviolet;
-            font-style: italic;
+            color: rgb(32, 2, 60);
+            opacity: .5;
         }
 
         button {
@@ -44,12 +44,16 @@
 }
 
 .taskList {
-    padding: .5rem;
+    margin-top: 20px;
+    padding: 1rem;
+    background-color: rgb(32, 2, 60);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .taskList p {
     margin-bottom: 20px;
-    color: rgb(32, 2, 60);
+    color: white;
     font-weight: bolder;
 }
 
@@ -62,15 +66,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 220px;
+    width: 300px;
 
     span {
         color: rgb(237, 187, 3);
-        font-weight: bolder;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+
+    .container_btn {
+        display: flex;
+        align-items: center;
     }
 
     button {
-        background-color: rgb(32, 2, 60);
+        background-color: transparent;
         border: none;
         padding: .4rem;
         width: 60px;
@@ -79,13 +89,40 @@
     }
 }
 
+.btn_remove {
+    display: flex;
+    align-items: center;
+}
+
 .btn_delete {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid red;
     padding: .4rem;
     width: 60px;
     color: white;
     border-radius: 5px;
+}
 
+.vipContainer {
+    margin: 5px auto;
+    max-width: 900px;
+    width: 100%;
+    padding: 2rem;
+    background-color: blueviolet;
+    border-radius: 5px;
+
+    h3 {
+        color: rgb(237, 187, 3);
+    }
+}
+
+.time {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+
+    span {
+        color: white;
+        margin-left: 5px;
+    }
 }
