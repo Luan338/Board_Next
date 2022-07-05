@@ -2,12 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 250px;
     cursor: pointer;
 
     span {
         color: white;
     }
+}
+
+.box_login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .btn {

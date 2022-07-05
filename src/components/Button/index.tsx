@@ -1,28 +1,38 @@
+import { signIn, signOut, useSession } from "../../../node_modules/next-auth/client";
+import { GithubLogo } from "../../../node_modules/phosphor-react/dist/index";
 import styles from "./styles.module.scss";
 
 export default function Button() {
 
-    const login = false;
+    const [session] = useSession();
 
-    return login ? (
+    console.log(session)
+
+    return session ? (
         <div className={styles.container_login}>
-            <img className={styles.img_login} src="https://www.suno.com.br/wp-content/uploads/2021/12/Steve_Jobs.jpg" alt="Imagem de Login" />
+            <img className={styles.img_login} src={session.user.image} alt="Imagem de Login" />
             <button
                 className={styles.btn}
                 type="button"
-                onClick={() => { }}
+                onClick={() => signOut()}
             >
-                Olá, Luan
+                Olá, {session.user.name}
             </button>
             <span>X</span>
         </div>
     ) : (
-        <button
-            className={styles.btn}
-            type="button"
-            onClick={() => { }}
+        <div
+            className={styles.box_login}
+            onClick={() => signIn('github')}
         >
-            Entrar com GitHub
-        </button>
+            <GithubLogo size={25} color="#ffffff" weight="fill" />
+            <button
+                className={styles.btn}
+                type="button"
+
+            >
+                Entrar com GitHub
+            </button>
+        </div>
     )
 }
