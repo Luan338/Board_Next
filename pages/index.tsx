@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Meu Board - Organizando suas tarefas.</title>
+        <title>Meu Board - Organizando suas tarefas</title>
       </Head>
       <div className={styles.container}>
         <img className={styles.board} src="images/board-user.svg" alt="board user" />
