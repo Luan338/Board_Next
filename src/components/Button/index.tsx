@@ -6,8 +6,6 @@ export default function Button() {
 
     const [session] = useSession();
 
-    console.log(session)
-
     return session ? (
         <div className={styles.container_login}>
             <img className={styles.img_login} src={session.user.image} alt="Imagem de Login" />
